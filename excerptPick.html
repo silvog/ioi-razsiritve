@@ -1,0 +1,136 @@
+<script src="js/holder.js"></script>
+<link rel="stylesheet" type="text/css" href="js/jquery.imgareaselect-0.9.10/css/imgareaselect-default.css"/>
+<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.imgareaselect-0.9.10/scripts/jquery.imgareaselect.pack.js"></script>
+
+<script src="js/selectImageExcerpt.js"></script>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row">
+        <div class="text-center" >
+            <h4 id="izbiraPodslikHeading"><strong>Izberi iz videnega polja dve podsliki (obraza oseb)</strong></h4>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <img id="levaTapiserija" alt="..." class="select-excerpt" onclick="firstClickLeft()">
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+
+            <div class="pull-left">
+
+                <div class="select-excerpt-leftPreview">
+                    <img id="levaTapiserijaPreview">
+
+                </div>
+
+                <div class="text-center">
+                    <button id="konfliktButton" class="btn btn-primary btn-md select-razresitev-konflikt-buttons" data-toggle="modal"
+                            data-target="#poimenujKonflikt" onclick="clearTapiserijaSelection()">Konflikt
+                    </button>
+                </div>
+
+            </div>
+
+            <div class=" pull-right">
+
+                <div class="select-excerpt-leftPreview">
+                    <img id="desnaTapiserijaPreview">
+                </div>
+
+                <div class="text-center">
+                    <button id="razresitevButton"  class="btn btn-primary btn-md select-razresitev-konflikt-buttons" data-toggle="modal"
+                            data-target="#poimenujRazresitev" onclick="clearTapiserijaSelection()">
+                        Razrešitev
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 pull-right">
+            <img id="desnaTapiserija" alt="..." class="select-excerpt" onclick="firstClickRight()">
+        </div>
+
+        <div id="potrdiIzbraneOdsekeWrapper" class="text-center">
+            <button id="potrdiIzbraneOdseke" class="btn btn-success" onclick="showKonfRazOptions()">Potrdi</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!-- Modal -->
+<div id="poimenujKonflikt" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Poimenovanje konflikta ali razrešitve</h4>
+            </div>
+            <div class="modal-body">
+                <p>Poimenuj <strong>konflikt</strong> v 10 sekundah.</p>
+                <p>
+                    Primer:
+                </p>
+                <ul>
+                    <li>JEZA - SOVRAŠTVO</li>
+                    <li>LJUBEZEN - SOVRAŠTVO</li>
+                    <li>STRAH - SOVRAŠTVO</li>
+                </ul>
+                <p>Odisej odraža sovraštvo, se ne spusti v boj brezglavo, ampak izbere zvijačo,
+                    ki mu omogoči pobeg.</p>
+                <p>Oči tvojega sina, ljubezen razdvojena združi, iz zgodbe se pode jeza zdaj velika.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="commenceToNaming()">V redu</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="poimenujRazresitev" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Poimenovanje konflikta ali razrešitve</h4>
+            </div>
+            <div class="modal-body">
+                <p>Poimenuj <strong>razrešitev</strong> v 10 sekundah.</p>
+                <p>
+                    Primer:
+                </p>
+                <ul>
+                    <li>JEZA - SOVRAŠTVO</li>
+                    <li>LJUBEZEN - SOVRAŠTVO</li>
+                    <li>STRAH - SOVRAŠTVO</li>
+                </ul>
+                <p>Odisej odraža sovraštvo, se ne spusti v boj brezglavo, ampak izbere zvijačo,
+                    ki mu omogoči pobeg.</p>
+                <p>Oči tvojega sina, ljubezen razdvojena združi, iz zgodbe se pode jeza zdaj velika.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="commenceToNaming()">V redu</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+

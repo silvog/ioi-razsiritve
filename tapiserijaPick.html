@@ -1,0 +1,80 @@
+<script src="js/holder.js"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/image-picker-master/image-picker/image-picker.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.imgareaselect-0.9.10/scripts/jquery.imgareaselect.js"></script>
+<script src="js/selectTapiserije.js"></script>
+
+<!-- Modal -->
+<div id="izbraneTapiserijeModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Izbira tapiserij</h4>
+            </div>
+            <div class="modal-body">
+                <p>Ali nadaljujem na izbiro podslik?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="commenceExcerptPick()">V
+                    redu
+                </button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Izberi ponovno</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12  col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+        <div class="row">
+            <div class="text-center">
+                <h4><strong>Izberi dve tapiseriji</strong></h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <select class="image-picker show-labels show-html" multiple="multiple">
+                <div class="col-lg-4">
+                    <option data-img-src="images/slika1.bmp" value="1" data-img-caption="Odisej Telemahu reši življenje"
+                            data-img-label=
+                            "Prebrisani Odisej v trojanski vojni ne
+                            vidi pravega smisla, zato se ji skuša ogniti
+                            s prevaro. Kot, da se mu je omračil um, orje
+                            na obali, da poseje sol, pa ga izda
+                            ljubezen do sina, ki mu ga kot preizkušnjo
+                            položi v brazdo Kalamed.">
+                    </option>
+                </div>
+                <div class="col-lg-4">
+                    <option data-img-src="images/slika2.bmp" value="2" data-img-caption="Odisej ponuja Polofemu pijačo"
+                            data-img-label=
+                            "Odisej z vinom omami kiklopa, da ga
+                            lahko nato z žarečim kolom oslepi
+                            (utrne luč oči).">
+                    </option>
+                </div>
+                <div class="col-lg-4">
+                    <option data-img-src="images/slika33.bmp" value="3"  data-img-caption="Odisej s tovariši pobegne polifemu iz votline"
+                            data-img-label= "
+                            Odisej pobegne s tovariši iz votline. Čujočega
+                            kiklopa z zvijačo preslepi, tako sebe in
+                            svoje mornarje skrije pod ovčje trebuhe.
+                            Polifem, ki vsako posebaj pogladi le po hrbtu,
+                            ubežnikov ne odkrije.">
+                    </option>
+                </div>
+            </select>
+
+        </div>
+
+    </div>
+</div>
+
+
+
